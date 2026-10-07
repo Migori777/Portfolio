@@ -1,0 +1,18 @@
+<section class="contact" id="contatti">
+    <div class="contact-text">
+        <h2>Parliamone</h2>
+        <p>Per una proposta di lavoro o una domanda, scrivimi.</p>
+    </div>
+
+    <div class="contact-links">
+        <a class="mail" [href]="'mailto:' + contact.email">{{ contact.email }}</a>
+
+        <button class="btn" type="button" (click)="copyEmail()">
+            {{ copied() ? "Copiata": "Copia"}}
+        </button>
+
+        @for(link of contact.links; track link.url) {
+            <a class="btn" [href]="link.url" target="_blank" rel="noopener">{{ link.label }}</a>
+        }
+    </div>
+</section>

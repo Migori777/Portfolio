@@ -15,7 +15,7 @@ export const PROFILE: Profile = {
   role: 'Sviluppatore mobile · iOS e Android',
   headline: "Scrivo il codice nativo che sta sotto l'interfaccia.",
   intro:
-    "Mi chiamo Andrea Migori. In Domotica Labs sviluppo plugin e integrazioni in Swift e Kotlin: la parte dell'app che parla con il telefono.",
+    "Mi chiamo Andrea Migori. Ho iniziato dalla parte delle app che non si vede e sto imparando tutto il resto. Il mio obiettivo è diventare uno sviluppatore nativo completo, su iOS e Android.",
   languages: [
     { name: 'Swift', tone: 'swift' },
     { name: 'Kotlin', tone: 'kotlin' },
@@ -75,3 +75,16 @@ export const PROJECTS: Project[] = [
     repoUrl: 'https://github.com/Migori777/TranTran',
   },
 ];
+
+export interface ContactInfo {
+  email: string;
+  links: { label: string; url: string }[];
+}
+
+export const CONTACT: ContactInfo = {
+  email: 'migori.andrea05@gmail.com',
+  links: [
+    { label: 'LinkedIn', url: 'https://www.linkedin.com/in/andrea-migori-458bb7364/' },
+    { label: 'GitHub', url: 'https://github.com/Migori777' },
+  ],
+};
