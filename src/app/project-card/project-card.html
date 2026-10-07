@@ -1,21 +1,21 @@
 <article class="card">
-    <div class="phone" [class]="project().platform" aria-hidden="true">
-        <span></span>
-        <span class="big"></span>
-        <span></span>
-        <span></span>
-    </div>
+  <div class="phone" [class]="project().platform" aria-hidden="true">
+    <span></span>
+    <span class="big"></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <div class="card-text">
-        <h3>{{ project().name }}</h3>
-        <p>{{ project().text }}</p>
+  <div class="card-text">
+    <h3>{{ project().name }}</h3>
+    <p>{{ project().text }}</p>
 
-        @if(project().status; as status) {
-            <span class="pill" [class]="project().platform"> {{ status }}</span>
-        }
+    @if (project().status; as status) {
+      <span class="pill" [class]="project().platform"> {{ status }}</span>
+    }
 
-        @if(project().repoUrl; as url) {
-            <a class="code-link" [href]="url" target="_blank" rel="noopener"> Codice su GitHub ↗</a>
-        }
-    </div>
+    @if (project().repoUrl; as url) {
+      <a class="code-link" [href]="url" target="_blank" rel="noopener"> Codice su GitHub ↗</a>
+    }
+  </div>
 </article>

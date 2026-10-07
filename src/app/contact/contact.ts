@@ -9,7 +9,7 @@ import { CONTACT } from '../data/profile';
 })
 export class Contact {
   protected readonly contact = CONTACT;
-  protected readonly copied = signal(false)
+  protected readonly copied = signal(false);
 
   protected async copyEmail(): Promise<void> {
     await navigator.clipboard.writeText(this.contact.email);

@@ -15,7 +15,7 @@ export const PROFILE: Profile = {
   role: 'Sviluppatore mobile · iOS e Android',
   headline: "Scrivo il codice nativo che sta sotto l'interfaccia.",
   intro:
-    "Mi chiamo Andrea Migori. Ho iniziato dalla parte delle app che non si vede e sto imparando tutto il resto. Il mio obiettivo è diventare uno sviluppatore nativo completo, su iOS e Android.",
+    'Mi chiamo Andrea Migori. Ho iniziato dalla parte delle app che non si vede e sto imparando tutto il resto. Il mio obiettivo è diventare uno sviluppatore nativo completo, su iOS e Android.',
   languages: [
     { name: 'Swift', tone: 'swift' },
     { name: 'Kotlin', tone: 'kotlin' },

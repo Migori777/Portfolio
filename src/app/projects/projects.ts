@@ -9,5 +9,5 @@ import { ProjectCard } from '../project-card/project-card';
   templateUrl: './projects.html',
 })
 export class Projects {
-  protected readonly projects = PROJECTS
+  protected readonly projects = PROJECTS;
 }
