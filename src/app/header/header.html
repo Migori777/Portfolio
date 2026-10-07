@@ -1,0 +1,11 @@
+<header class="top">
+    <div class="wrap top-in">
+        <a class="monogram" href="#inizio" aria-label="Torna all'inizio">AM</a>
+        <nav aria-label="Sezioni">
+            @for(link of links; track link.target) {
+                <a [href]="link.target"> {{link.label}} </a>
+            }
+        </nav>
+        <a class="btn btn-solid" href="#contatti">Scrivimi</a>
+    </div>
+</header>
