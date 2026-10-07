@@ -1,6 +1,7 @@
+export type Tone = 'swift' | 'kotlin';
 export interface Language {
   name: string;
-  tone?: 'swift' | 'kotlin';
+  tone?: Tone;
 }
 
 export interface Profile {
@@ -54,5 +55,23 @@ export const TIMELINE: TimelineItem[] = [
     period: '2019 — 2024',
     title: 'Diploma in informatica',
     place: 'IIS «G. Vallauri» · Fossano',
+  },
+];
+
+export interface Project {
+  name: string;
+  text: string;
+  platform: Tone;
+  status?: string;
+  repoUrl?: string;
+}
+
+export const PROJECTS: Project[] = [
+  {
+    name: 'TranTran',
+    text: "Un'app iOS per organizzare la giornata, scritta in Swift.",
+    platform: 'swift',
+    status: 'In corso',
+    repoUrl: 'https://github.com/Migori777/TranTran',
   },
 ];
