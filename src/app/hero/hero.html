@@ -1,0 +1,18 @@
+<section class="hero" id="inizio">
+    <div class="hero-text">
+        <p class="eyebrow">{{ profile.role }}</p>
+        <h1>{{ profile.headline }}</h1>
+        <p class="lead">{{ profile.intro }}</p>
+
+        <div class="actions">
+            <a class="btn btn-solid" href="#contatti">Scrivimi</a>
+            <a class="btn" href="#lavoro">Cosa faccio</a>
+        </div>
+
+        <ul class="pills" aria-label="Linguaggi">
+            @for(language of profile.languages; track language.name) {
+                <li class="pill" [class]="language.tone">{{ language.name }}</li>
+            }
+        </ul>
+    </div>
+</section>
