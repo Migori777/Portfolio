@@ -35,5 +35,24 @@ export const WORK_AREAS: WorkArea[] = [
   {
     title: 'Due piattaforme, un comportamento',
     text: 'Ogni plugin ha una parte per iOS e una per Android, e deve rispondere allo stesso modo su entrambe.',
-  }
+  },
+];
+
+export interface TimelineItem {
+  period: string;
+  title: string;
+  place: string;
+}
+
+export const TIMELINE: TimelineItem[] = [
+  {
+    period: '2024 — oggi',
+    title: 'Sviluppatore mobile',
+    place: 'Domotica Labs · Fossano',
+  },
+  {
+    period: '2019 — 2024',
+    title: 'Diploma in informatica',
+    place: 'IIS «G. Vallauri» · Fossano',
+  },
 ];

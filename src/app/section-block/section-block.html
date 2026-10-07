@@ -1,11 +1,11 @@
 <section class="block" [id]="anchor()">
-    <div class="block-head">
-        <h2>{{ heading() }}</h2>
-        @if(intro(); as text) {
-            <p>{{ text }}</p>
-        }
-    </div>
-    <div class="block-body">
-        <ng-content />
-    </div>
+  <div class="block-head">
+    <h2>{{ heading() }}</h2>
+    @if (intro(); as text) {
+      <p>{{ text }}</p>
+    }
+  </div>
+  <div class="block-body">
+    <ng-content />
+  </div>
 </section>

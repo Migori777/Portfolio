@@ -1,0 +1,24 @@
+.rows li {
+  display: grid;
+  grid-template-columns: 8.5rem minmax(0, 1fr);
+  gap: 0.3rem 1rem;
+}
+
+.when {
+  padding-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.what {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+@media (max-width: 40rem) {
+  .rows li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

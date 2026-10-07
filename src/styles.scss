@@ -173,3 +173,25 @@ section {
   letter-spacing: 0.04em;
   text-transform: uppercase;
 }
+
+.rows {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding-block: 1.1rem;
+    border-bottom: 1px solid var(--line);
+
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+
+  p {
+    max-width: 36rem;
+    color: var(--muted);
+  }
+}

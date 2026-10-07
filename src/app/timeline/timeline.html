@@ -1,0 +1,11 @@
+<ul class="rows">
+  @for (item of items; track item.period) {
+    <li>
+      <span class="when">{{ item.period }}</span>
+      <div class="what">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.place }}</p>
+      </div>
+    </li>
+  }
+</ul>

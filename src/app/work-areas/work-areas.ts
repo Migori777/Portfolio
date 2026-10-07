@@ -8,5 +8,5 @@ import { WORK_AREAS } from '../data/profile';
   templateUrl: './work-areas.html',
 })
 export class WorkAreas {
-  protected readonly areas = WORK_AREAS
+  protected readonly areas = WORK_AREAS;
 }
