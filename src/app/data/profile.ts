@@ -21,3 +21,23 @@ export const PROFILE: Profile = {
     { name: 'Java' },
   ],
 };
+
+export interface WorkArea {
+  title: string;
+  text: string;
+}
+
+export const WORK_AREAS: WorkArea[] = [
+  {
+    title: 'Plugin Cordova',
+    text: "Scrivo in Swift e Kotlin i plugin che un'app Cordova richiama per usare le funzioni del telefono.",
+  },
+  {
+    title: 'Due piattaforme, un comportamento',
+    text: 'Ogni plugin ha una parte per iOS e una per Android, e deve rispondere allo stesso modo su entrambe.',
+  },
+  {
+    title: 'Da Cordova a Capacitor',
+    text: 'Sto portando i plugin esistenti su Capacitor, la piattaforma che ha preso il posto di Cordova.',
+  },
+];
