@@ -1,0 +1,23 @@
+<div
+  class="stack"
+  role="img"
+  aria-label="Tre strati di un'app: sopra l'interfaccia, in mezzo i plugin e le integrazioni native di cui mi occupo, sotto iOS e Android."
+>
+  <div class="slab ui">
+    <span class="slab-title">Interfaccia</span>
+    <span class="slab-note">Quello che vedi sullo schermo</span>
+  </div>
+  <div class="slab mine">
+    <span class="slab-title">Plugin e integrazioni native</span>
+    <span class="slab-note">Qui lavoro io</span>
+  </div>
+
+  <div class="slab-row">
+    @for (platform of platforms; track platform.name) {
+      <div class="slab" [class]="platform.tone">
+        <span class="slab-title">{{ platform.name }}</span>
+        <span class="slab-note">{{ platform.language }}</span>
+      </div>
+    }
+  </div>
+</div>

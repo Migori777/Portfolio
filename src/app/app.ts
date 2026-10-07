@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Header } from './header/header';
-import { Hero  } from './hero/hero';
+import { Hero } from './hero/hero';
 
 @Component({
   imports: [Header, Hero],
