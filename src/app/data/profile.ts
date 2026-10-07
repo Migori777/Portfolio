@@ -35,9 +35,5 @@ export const WORK_AREAS: WorkArea[] = [
   {
     title: 'Due piattaforme, un comportamento',
     text: 'Ogni plugin ha una parte per iOS e una per Android, e deve rispondere allo stesso modo su entrambe.',
-  },
-  {
-    title: 'Da Cordova a Capacitor',
-    text: 'Sto portando i plugin esistenti su Capacitor, la piattaforma che ha preso il posto di Cordova.',
-  },
+  }
 ];
