@@ -1,57 +1,57 @@
 :host {
-    display: block;
-    position: sticky;
-    top: 0;
-    z-index: 5;
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 5;
 }
 
 .top {
-    background: color-mix(in srgb, var(--bg) 86%, transparent);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid var(--line);
+  background: color-mix(in srgb, var(--bg) 86%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
 }
 
 .top-in {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    padding-block: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-block: 0.75rem;
 }
 
 .monogram {
-    display: grid;
-    place-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    background: var(--violet-soft);
-    color: var(--violet);
-    font: 700 0.95rem/1 var(--display);
-    text-decoration: none;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: var(--violet-soft);
+  color: var(--violet);
+  font: 700 0.95rem/1 var(--display);
+  text-decoration: none;
 }
 
 nav {
-    display: flex;
-    gap: 1.5rem;
-    margin-left: auto;
-    font-size: 0.95rem;
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  font-size: 0.95rem;
 
-    a {
-        color: var(--muted);
-        text-decoration: none;
+  a {
+    color: var(--muted);
+    text-decoration: none;
 
-        &:hover {
-            color: var(--ink)
-        }
+    &:hover {
+      color: var(--ink);
     }
+  }
 }
 
 @media (max-width: 40rem) {
-    nav {
-        display: none
-    }
+  nav {
+    display: none;
+  }
 
-    .btn {
-        margin-left: auto
-    }
+  .btn {
+    margin-left: auto;
+  }
 }

@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 })
 export class Header {
   protected readonly links = [
-    {label: "Cosa faccio", target: "#lavoro"},
-    {label: "Percorso", target: "#percorso"},
-    {label: "Per conto mio", target: "#progetti"}
-  ]
+    { label: 'Cosa faccio', target: '#lavoro' },
+    { label: 'Percorso', target: '#percorso' },
+    { label: 'Per conto mio', target: '#progetti' },
+  ];
 }
